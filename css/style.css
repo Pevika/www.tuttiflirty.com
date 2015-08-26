@@ -11,6 +11,33 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'todayshop-lightregular';
+    src: url('../fonts/todayshop-light_44888-webfont.eot');
+    src: url('../fonts/todayshop-light_44888-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/todayshop-light_44888-webfont.woff2') format('woff2'),
+    url('../fonts/todayshop-light_44888-webfont.woff') format('woff'),
+    url('../fonts/todayshop-light_44888-webfont.ttf') format('truetype'),
+    url('../fonts/todayshop-light_44888-webfont.svg#todayshop-lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'shopshop';
+    /*
+    src: url('../fonts/DIN Medium.eot');
+    src: url('../fonts/DIN Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/DIN Medium.woff2') format('woff2'),
+    url('../fonts/DIN Medium.woff') format('woff'),
+    */
+    url('../fonts/TodaySHOP-Light_44888.ttf') format('truetype'),
+    font-weight: normal;
+    font-style: normal;
+    /*url('../fonts/DIN Medium.svg#ds-digitalbold') format('svg');*/
+
+}
 
 body {
     width: 100%;
@@ -44,40 +71,32 @@ html {
 }
 
 .intro {
-    display: table;
+    /*display: table;*/
     width: 100%;
     height: auto;
-    padding: 100px 0;
+    min-height: 100%;
+    /*padding: 100px 0;*/
     text-align: left;
     color: white;
     background-color: none;
     background:
-        /* top, transparent, faked with gradient */
-        linear-gradient(
-            rgba(104, 189, 230, 0.2),
-            rgba(96, 62, 146, 0.2)
-        ),
-
-
-        /* top, transparent, faked with gradient
-        linear-gradient(
-        rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0.2)
-        ),
-        */
-
-        /* bottom, image */
         url(../img/bg.jpg) no-repeat 82% center fixed;
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    -webkit-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
+}
+
+.imgPress{
+    margin-top: 5px;
 }
 
 .intro .intro-body {
-    display: table-cell;
-    vertical-align: middle;
+   /* display: table-cell;
+    vertical-align: middle;*/
 }
 #intro-content {
     background: linear-gradient(
@@ -102,12 +121,13 @@ html {
     font-size: 1.2em;
 }
 .intro img {
-    filter:alpha(opacity=75); opacity:0.75;
+
 }
 
 @media(min-width:10px) {
     .intro {
-        height: 100%;
+        height: auto;
+        min-height: 100%;
         padding: 0;
     }
 
@@ -155,3 +175,116 @@ html {
 .img-about-us {
     height: 200px
 }
+
+.button-stop-spot {
+    z-index: 100000;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 76px;
+    height: 76px;
+}
+
+.button-stop-spot a {
+    width: 24px;
+    height: 24px;
+    padding: 26px;
+    float: left;
+}
+
+.button-stop-spot img {
+    width: 24px;
+    height: 24px;
+}
+
+.titleInfo {
+    font-family: 'todayshop-lightregular', sans-serif;
+    font-size: 3em;
+    margin-top : 50px;
+letter-spacing: 3px;
+}
+
+.download
+{
+    text-align: right;
+}
+
+
+
+.bottomInfo{
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+}
+
+.socialBtn{
+    padding-left: 4%;
+}
+.socialBtn img{
+    width: 50px;
+
+}
+
+.imageTwitter {
+    margin-left: 2%;
+}
+
+.imageFacebook{
+    margin-right: 2%;
+}
+
+.download img{
+
+    height: 80px;
+}
+
+.row {
+    margin : 0px
+}
+
+.rowPlay{
+    position: absolute;
+    top: 0xp;
+
+    top: 50%;
+
+    left: 50%;
+    margin-left: -75px;
+}
+
+.form-group{
+    color: rgba(96, 62, 146, 1)
+}
+#countbox1{
+    font-size: 70px;
+    font-family: 'todayshop-lightregular';
+    text-align: center;
+}
+@media screen and (max-width: 767px) {
+    .col-xs-12{
+        text-align: center;
+    }
+    .download
+    {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 100px;
+    }
+    .bottomInfo{
+        position: relative;
+        bottom: 0px;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .rowPlay{
+
+        margin: 0px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        text-align: center;
+    }
+
+}
+
