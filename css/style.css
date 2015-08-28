@@ -86,11 +86,11 @@ html {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    -webkit-transition: background-image .7s ease-in-out .7s;
-    -moz-transition: background-image .7s ease-in-out .7s;
-    -ms-transition: background-image .7s ease-in-out .7s;
-    -o-transition: background-image .7s ease-in-out .7s;
-    transition: background-image .7s ease-in-out .7s;
+    -webkit-transition: background-image .5s ease-in-out .3s;
+    -moz-transition: background-image .5s ease-in-out .3s;
+    -ms-transition: background-image .5s ease-in-out .3s;
+    -o-transition: background-image .5s ease-in-out .3s;
+    transition: background-image .5s ease-in-out .3s;
 }
 
 .imgPress{
