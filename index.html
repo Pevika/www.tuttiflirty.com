@@ -73,7 +73,7 @@
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
-
+        
         <!-- Intro Header -->
         <div class="intro">
 
@@ -284,6 +284,17 @@ $( "#mainlingList" ).submit(function( event ) {
 
         </script>
 
+<script type="text/javascript">
+  $(document).ready(function() {
+      var current_bg = 0;
+      var bgs = ["img/thumbs/bg1.jpg", "img/thumbs/bg2.jpg", "img/thumbs/bg3.jpg"]
+    function change_bg() {
+        current_bg = (current_bg + 1) % 3;
+        $(".intro").css("background-image", "url(" + bgs[current_bg] + ")");
+    }
+    setInterval(function () { change_bg(); }, 7000);
+  });
+</script>
 
 
     </body>

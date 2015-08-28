@@ -80,14 +80,17 @@ html {
     color: white;
     background-color: none;
     background:
-        url(../img/thumbs/bg.jpg) no-repeat 82% center fixed;                
+        url(../img/thumbs/bg1.jpg) no-repeat 82% center fixed;                
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    -webkit-transition: background-image 0.2s ease-in-out;
-    transition: background-image 0.2s ease-in-out;
+    -webkit-transition: background-image .7s ease-in-out .7s;
+    -moz-transition: background-image .7s ease-in-out .7s;
+    -ms-transition: background-image .7s ease-in-out .7s;
+    -o-transition: background-image .7s ease-in-out .7s;
+    transition: background-image .7s ease-in-out .7s;
 }
 
 .imgPress{
@@ -287,4 +290,3 @@ letter-spacing: 3px;
     }
 
 }
-
