@@ -80,7 +80,7 @@ html {
     color: white;
     background-color: none;
     background:
-        url(../img/bg.jpg) no-repeat 82% center fixed;
+        url(../img/thumbs/bg.jpg) no-repeat 82% center fixed;                
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
