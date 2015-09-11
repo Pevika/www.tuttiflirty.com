@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="45b14cd9-8ecc-4723-a4e0-6ff690fd5acd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/presse.html" afterPath="$PROJECT_DIR$/presse.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="www.tuttiflirty.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,8 +39,8 @@
       <file leaf-file-name="presse.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/presse.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28615862">
-              <caret line="159" column="70" selection-start-line="159" selection-start-column="70" selection-end-line="159" selection-end-column="70" />
+            <state vertical-scroll-proportion="0.47278383">
+              <caret line="182" column="153" selection-start-line="182" selection-start-column="153" selection-end-line="182" selection-end-column="153" />
               <folding>
                 <element signature="n#style#0;n#h1#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -645,8 +644,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/presse.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28615862">
-          <caret line="159" column="70" selection-start-line="159" selection-start-column="70" selection-end-line="159" selection-end-column="70" />
+        <state vertical-scroll-proportion="0.47278383">
+          <caret line="182" column="153" selection-start-line="182" selection-start-column="153" selection-end-line="182" selection-end-column="153" />
           <folding>
             <element signature="n#style#0;n#h1#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
