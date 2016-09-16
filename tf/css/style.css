@@ -188,7 +188,7 @@ html {
 .titleInfo {
     font-family: 'todayshop-lightregular', sans-serif;
     font-size: 3em;
-    margin-top : 50px;
+   
 letter-spacing: 3px;
 }
 
@@ -252,6 +252,35 @@ letter-spacing: 3px;
     font-family: 'todayshop-lightregular';
     text-align: center;
 }
+.col-sm-6{
+        text-align: right;
+        text-align:right;
+         padding-right :100px
+    }
+
+.bottomView {
+    font-style: italic; font-weight: bold; font-size:1.2em; font-family: 'avenir-black'
+}
+
+.titleInfo{
+        letter-spacing: initial;
+}
+
+.iphoneView {
+        min-height: 500px;
+    background: url("../img/iphone.png");
+    /* background-size: 200px 200px; */
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-size: 50%;
+}
+video {
+        position: absolute;
+    position: 10% 10%;
+    left: 30%;
+    width: 39%;
+    top: 8%;
+}
 @media screen and (max-width: 767px) {
     .col-xs-12{
         text-align: center;
@@ -261,6 +290,10 @@ letter-spacing: 3px;
         text-align: center;
         margin-top: 20px;
         margin-bottom: 100px;
+    }
+    .titleInfo {
+        padding-left:  100px;
+        padding-top : 50px;
     }
     .bottomInfo{
         position: relative;
