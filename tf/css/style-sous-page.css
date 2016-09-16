@@ -38,7 +38,8 @@ h1 small {
 }
 
 .navbar-default {
-    background-color: rgba(96, 62, 146, 1);
+    /*background-color: rgba(96, 62, 146, 1);*/
+    background-color: white;
     border-color: transparent;
     color: white;
 }

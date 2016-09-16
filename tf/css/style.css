@@ -1,42 +1,22 @@
 @font-face {
-    font-family: 'din-medium';
-    /*
-    src: url('../fonts/DIN Medium.eot');
-    src: url('../fonts/DIN Medium.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/DIN Medium.woff2') format('woff2'),
-    url('../fonts/DIN Medium.woff') format('woff'),
-    */
-    url('../fonts/DIN Medium.ttf') format('truetype'),
-    /*url('../fonts/DIN Medium.svg#ds-digitalbold') format('svg');*/
+    font-family: 'avenir';
+    url('../fonts/avenir.ttf') format('truetype');
     font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'todayshop-lightregular';
-    src: url('../fonts/todayshop-light_44888-webfont.eot');
-    src: url('../fonts/todayshop-light_44888-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/todayshop-light_44888-webfont.woff2') format('woff2'),
-    url('../fonts/todayshop-light_44888-webfont.woff') format('woff'),
-    url('../fonts/todayshop-light_44888-webfont.ttf') format('truetype'),
-    url('../fonts/todayshop-light_44888-webfont.svg#todayshop-lightregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+    font-style: normal; 
 }
 
 @font-face {
-    font-family: 'shopshop';
-    /*
-    src: url('../fonts/DIN Medium.eot');
-    src: url('../fonts/DIN Medium.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/DIN Medium.woff2') format('woff2'),
-    url('../fonts/DIN Medium.woff') format('woff'),
-    */
-    url('../fonts/TodaySHOP-Light_44888.ttf') format('truetype'),
+    font-family: 'avenir-black';
+    url('../fonts/avenir-black.ttf') format('truetype');
     font-weight: normal;
-    font-style: normal;
-    /*url('../fonts/DIN Medium.svg#ds-digitalbold') format('svg');*/
+    font-style: normal; 
+}
 
+@font-face {
+    font-family: 'avenir-medium';
+    url('../fonts/avenir-medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal; 
 }
 
 body {
@@ -64,7 +44,8 @@ html {
     margin: 20px;
 }
 .sous-page h1 {
-    color: rgba(96, 62, 146, 0.75);
+    /*color: rgba(96, 62, 146, 0.75);*/
+    color: #ff0080;
 }
 .sous-page h1 small {
     color: rgba(104, 189, 230, 0.75);
@@ -79,8 +60,8 @@ html {
     text-align: left;
     color: white;
     background-color: none;
-    background:
-        url(../img/thumbs/bg1.jpg) no-repeat 82% center fixed;                
+    background:  #ff0080;
+        /*url(../img/thumbs/bg1.jpg) no-repeat 82% center fixed;*/                
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -153,16 +134,20 @@ html {
 }
 
 .navbar-default {
-    background-color: rgba(96, 62, 146, 1);
+    background-color: white;
+    /*background-color: rgba(96, 62, 146, 1);*/
     border-color: transparent;
-    color: white;
+    /*color: white;*/
+    color:#ff0080;
 }
 .navbar-default .navbar-nav>li>a {
-    color: white;
+    /*color: white;*/
+    color:#ff0080;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: white;
+    /*color: white;*/
+    color:#ff0080;
     background-color: transparent;
 }
 .navbar-default .navbar-toggle .icon-bar {
@@ -231,10 +216,12 @@ letter-spacing: 3px;
 
 .imageTwitter {
     margin-left: 2%;
+    width: 30px;
 }
 
 .imageFacebook{
     margin-right: 2%;
+    width: 30px;
 }
 
 .download img{
@@ -257,7 +244,8 @@ letter-spacing: 3px;
 }
 
 .form-group{
-    color: rgba(96, 62, 146, 1)
+    /*color: rgba(96, 62, 146, 1)*/
+    color:#ff0080
 }
 #countbox1{
     font-size: 70px;
