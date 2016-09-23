@@ -229,7 +229,7 @@ html {
     letter-spacing: initial;
 }
 .iphoneView {
-    min-height: 500px;
+    min-height: 550px;
     text-align: center;
     background: url("../img/iphone.png");
     background-repeat: no-repeat;
