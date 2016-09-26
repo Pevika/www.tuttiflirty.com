@@ -169,6 +169,9 @@ html {
     width: 24px;
     height: 24px;
 }
+.downloadImage {
+    padding-left: 2.5em;
+}
 .titleInfo {
     font-family: 'todayshop-lightregular', sans-serif;
     font-size: 3em;
@@ -340,6 +343,11 @@ video {
     .navbar-default .navbar-toggle {
         border-color: #ddd;
     }
+
+.downloadImage {
+    padding-left: 0em;
+    text-align: center;
+}
 
     .killasonIphone {
         text-align: center;
