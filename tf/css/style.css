@@ -72,6 +72,8 @@ html {
     -ms-transition: background-image .5s ease-in-out .3s;
     -o-transition: background-image .5s ease-in-out .3s;
     transition: background-image .5s ease-in-out .3s;
+
+
 }
 
 .imgPress{
@@ -284,6 +286,9 @@ video {
 @media screen and (max-width: 767px) {
     .col-xs-12{
         text-align: center;
+    }
+    .intro {
+        height : auto;
     }
     .download
     {
