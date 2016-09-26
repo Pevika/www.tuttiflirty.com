@@ -179,6 +179,8 @@ html {
     font-family: 'todayshop-lightregular', sans-serif;
     font-size: 3em;
     letter-spacing: 3px;
+    text-align:left; 
+    padding-left : 75px
 }
 .download {
     text-align: right;
@@ -332,6 +334,7 @@ video {
     .titleInfokillason{
         padding: 0px;
         margin-top : 20px;
+        text-align:center;
     }
     .navbar-default .navbar-toggle {
         border-color: #ddd;
