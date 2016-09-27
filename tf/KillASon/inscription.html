@@ -116,6 +116,27 @@ function isValidEmailAddress(emailAddress) {
             $(".footerInscription").hide()
             $(".buttonInscription").hide()
             $(".confirmationInscription").show()
+            var data = {
+                email : email,
+                first_name : firstName,
+                last_name : lastName
+            }
+             $.ajax({
+                    url: "http://api.dev.tuttiflirty.com:5555/api/v3.0/emails/events/killason",
+                    type: "post",
+                    data: data ,
+                    success: function (response) {
+                       // you will get response from your php page (what you echo or print)                 
+                       console.log(response)
+                    },
+                    error: function(jqXHR, textStatus, errorThrown) {
+                       console.log(textStatus, errorThrown);
+                    }
+
+
+            });
+   
+
         }
     }
 
