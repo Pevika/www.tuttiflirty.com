@@ -173,6 +173,7 @@ html {
     font-family: 'todayshop-lightregular', sans-serif;
     font-size: 3em;
     letter-spacing: 3px;
+    text-align:left;
 }
 
 .titleInfokillason {
@@ -271,6 +272,10 @@ video {
       text-align : right;
 }
 
+.titleInfo{
+    text-align: left;
+}
+
 @media screen and (max-width: 767px) {
     .col-xs-12 {
         text-align: center;
@@ -318,7 +323,7 @@ video {
         font-family: 'todayshop-lightregular', sans-serif;
         font-size: 3em;
         letter-spacing: 3px;
-        color: #ff0080;
+        text-align: center;
     }
 
 .topKillASon{
@@ -339,5 +344,6 @@ video {
     }
     .iphoneView {
         height: 250px;
+        padding: 0px;
     }
 }
