@@ -121,10 +121,16 @@ function isValidEmailAddress(emailAddress) {
                 first_name : firstName,
                 last_name : lastName
             }
+
+            $.post( "https://api3.tuttiflirty.com/api/v3.0/emails/events/killason", data, function(data){
+                console.log(data)
+            })
+            /*
              $.ajax({
-                    url: "http://api.dev.tuttiflirty.com:5555/api/v3.0/emails/events/killason",
+                    url: "https://api3.tuttiflirty.com/api/v3.0/emails/events/killason",
                     type: "post",
-                    data: data ,
+                    data:"email=" + email + "&first_name="+firstName+"&last_name="+lastName,
+                    dataType:"jsonp",
                     success: function (response) {
                        // you will get response from your php page (what you echo or print)                 
                        console.log(response)
@@ -134,7 +140,7 @@ function isValidEmailAddress(emailAddress) {
                     }
 
 
-            });
+            });*/
    
 
         }
