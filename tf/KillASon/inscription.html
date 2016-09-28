@@ -130,7 +130,7 @@ function isValidEmailAddress(emailAddress) {
              $.ajax({
                     url: window.location.origin + "/event/killason",
                     type: "POST",
-                    data:"email=" + email + "&first_name="+firstName+"&last_name="+lastName,
+                    data:data,
                     dataType:"json",
                     success: function (response) {
                        // you will get response from your php page (what you echo or print)                 
