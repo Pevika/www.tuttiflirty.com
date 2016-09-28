@@ -122,15 +122,16 @@ function isValidEmailAddress(emailAddress) {
                 last_name : lastName
             }
 
-            $.post( "https://api3.tuttiflirty.com/api/v3.0/emails/events/killason", data, function(data){
+            $.post( "http://www.tuttiflirty.com/event/killason", data, function(data){
                 console.log(data)
             })
+            
             /*
              $.ajax({
-                    url: "https://api3.tuttiflirty.com/api/v3.0/emails/events/killason",
-                    type: "post",
+                    url: "http://www.tuttiflirty.com/event/killason",
+                    type: "POST",
                     data:"email=" + email + "&first_name="+firstName+"&last_name="+lastName,
-                    dataType:"jsonp",
+                    dataType:"json",
                     success: function (response) {
                        // you will get response from your php page (what you echo or print)                 
                        console.log(response)
