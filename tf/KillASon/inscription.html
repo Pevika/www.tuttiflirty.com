@@ -128,7 +128,7 @@ function isValidEmailAddress(emailAddress) {
             
             
              $.ajax({
-                    url: "http://www.tuttiflirty.com/event/killason",
+                    url: window.location.origin + "/event/killason",
                     type: "POST",
                     data:"email=" + email + "&first_name="+firstName+"&last_name="+lastName,
                     dataType:"json",
