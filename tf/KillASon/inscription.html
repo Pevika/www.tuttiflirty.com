@@ -122,7 +122,7 @@ function isValidEmailAddress(emailAddress) {
                 last_name : lastName
             }
 
-            $.post( "http://www.tuttiflirty.com/event/killason", data, function(data){
+            $.post( window.location.origin + "/event/killason", data, function(data){
                 console.log(data)
             })
             
