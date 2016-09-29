@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+     <title>Tutti flirty</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Tutti flirty, rencontres à pile ou face !">
+        <meta property="og:title" content="Tutti flirty" />
+        <meta property="og:description" content="Tutti flirty, rencontres à pile ou face !" />
+        <meta property="og:url" content="http://www.tuttiflirty.com/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="http://www.tuttiflirty.com/img/bg.jpg?t=1" />
+        <meta name="author" content="Pevika">
+
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+        <link rel="icon" href="img/favicon/favicon.ico" />
+        <link rel="icon" type="image/png" href="img/favicon/favicon.png" />
+        <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+         <div class="row headerInscription">
+            <img src="img/header_inscription.png" style="width : 100%">
+         </div>
+         <div class="row footerInscription">
+            <div  class="col-sm-2 col-xs-12"></div>
+            <div  class="col-sm-2 col-xs-12 " ><input type="text" id="firstName" placeholder="Prénom"> </input></div>
+            <div  class="col-sm-2 col-xs-12 nameInput"><input type="text" id="lastName" placeholder="Nom"> </input></div>
+            <div  class="col-sm-3 col-xs-12"><input type="text" id="email" placeholder="E-mail"> </input></div>
+            <div  class="col-sm-2 col-xs-12 selectSexe " style = "margin-top:-10px">
+
+                <label style="margin-right: 20px" for="female">
+
+                    <img style="height :20px" src="img/PICTOS-05.png">
+                    <input type="radio" id="female" name="sexe"  value="female" />
+                </label>
+                
+
+
+                <label for="male">
+
+                    <img style="width :20px" src="img/PICTOS-06.png">
+                    <input type="radio" id="Male" name="sexe" value="male"  />
+                </label>
+
+                
+            </div>
+            <div  class="col-sm-1 col-xs-12"></div>
+        </div>
+        <div class="row buttonInscription" style="text-align:center" onclick="sendInfo()">
+            <button>JE M'INSCRIS</button>
+        </div>
+         <div class="row confirmationInscription" style="text-align:center; display:none" onclick="sendInfo()">
+            Merci <strong>;)</strong>
+        </div>
+    </body>
+
+    <script>
+
+function isValidEmailAddress(emailAddress) {
+    var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
+    // alert( pattern.test(emailAddress) );
+    return pattern.test(emailAddress);
+};
+
+    function sendInfo(){
+        console.log("LCICK");
+        var firstName = $("#firstName").val()
+        var lastName = $("#lastName").val()
+        var email = $("#email").val()
+        var sexe = $('input[name="sexe"]:checked').val();
+        console.log(firstName);
+        console.log(lastName);
+                console.log(email);
+                console.log(sexe);
+
+                $("#firstName").css("border-top", "none")
+                $("#lastName").css("border-top", "none")
+                  $("#email").css("border-top", "none")
+                  var ok = true
+         if (firstName == ""){
+            $("#firstName").css("border-top", "2px solid #FF0080")
+            ok = false
+         } 
+          if (lastName == ""){
+             $("#lastName").css("border-top", "2px solid #FF0080")
+             ok = false
+         }
+           if (sexe == null || sexe == undefined){
+            ok = false
+         } 
+         if (isValidEmailAddress(email) == false){
+            $("#email").css("border-top", "2px solid #FF0080")
+            ok = false
+        }
+        if (ok == true) {
+            $(".footerInscription").hide()
+            $(".buttonInscription").hide()
+            $(".confirmationInscription").show()
+            var data = {
+                email : email,
+                first_name : firstName,
+                last_name : lastName
+            }
+            /*
+            $.post( window.location.origin + "/event/killason", data, function(data){
+                console.log(data)
+            })*/
+            
+   
+
+             $.ajax({
+                    url: window.location.origin + "/event/killason",
+                    type: "POST",
+                    data:JSON.stringify(data),
+                     dataType:"json",
+                      contentType: "application/json",
+                    success: function (response) {
+                       // you will get response from your php page (what you echo or print)
+                       console.log(response)
+                    },
+                    error: function(jqXHR, textStatus, errorThrown) {
+                       console.log(textStatus, errorThrown);
+                    }
+
+
+            });
+   
+
+        }
+    }
+
+    function reloadSize(){
+        var a = $(".headerInscription").height();
+        var b = $("body").height();
+        var w = $("body").width();
+        var c = $(".nameInput").height()
+
+        if (w < 767){
+            return
+        }
+            console.log(b);
+            console.log(a);
+            console.log(b - a);
+            var l = (b - a) / 2
+            console.log(l)
+            //$(".footerInscription").height(l);
+            var nbr = l - c - 5
+            $(".footerInscription").css("padding-top",nbr);
+
+
+            var topButton = (nbr / 2) - ($(".buttonInscription").height() / 2)
+            $(".buttonInscription").css("padding-top", topButton);
+
+        }
+        $( window ).resize(function() {
+            reloadSize()
+          
+        });
+
+        $( document ).ready(function() {
+            reloadSize()
+          
+        });
+    </script>
+</html>
