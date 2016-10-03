@@ -104,7 +104,8 @@ function isValidEmailAddress(emailAddress) {
         console.log("LCICK");
         var firstName = $("#firstName").val()
         var lastName = $("#lastName").val()
-        var lastName = $("#phoneNumber").val()
+        var phoneNumber = $("#phoneNumber").val()
+
         var email = $("#email").val()
         var sexe = $('input[name="sexe"]:checked').val();
         console.log(firstName);
@@ -131,6 +132,7 @@ function isValidEmailAddress(emailAddress) {
              $("#phoneNumber").css("border-top", "2px solid #FF0080")
              ok = false
          }
+
 
          if (isValidEmailAddress(email) == false){
             $("#email").css("border-top", "2px solid #FF0080")
