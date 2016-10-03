@@ -131,23 +131,12 @@ function isValidEmailAddress(emailAddress) {
                 console.log(data)
             })*/
 
-            ga('send', {
-              hitType: 'event',
-              eventCategory: 'inscription',
-              eventAction: 'click',
-              eventLabel: 'inscript'
-            });
-            ga('send', {
-  hitType: 'event',
-  eventCategory: 'Videos',
-  eventAction: 'play',
-  eventLabel: 'Fall Campaign'
-});
+
 
 ga('send', 'event', {
    eventCategory: 'Outbound Link',
    eventAction: 'click',
-   eventLabel: "inscription"
+   eventLabel: firstName + " " + lastName+  " " + email
  });
             console.log("ON envoie");
              $.ajax({
