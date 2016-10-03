@@ -61,8 +61,8 @@
             <div  class="col-sm-2 col-xs-12 " ><input type="text" id="firstName" placeholder="Prénom"> </input></div>
             <div  class="col-sm-2 col-xs-12 nameInput"><input type="text" id="lastName" placeholder="Nom"> </input></div>
             <div  class="col-sm-3 col-xs-12"><input type="text" id="email" placeholder="E-mail"> </input></div>
-            <div  class="col-sm-2 col-xs-12 selectSexe " style = "margin-top:-10px">
-
+            <div  class="col-sm-2 col-xs-12  " style = "">
+              <input type="text" id="phonenumber" placeholder="Phone"> </input>
             </div>
             <div  class="col-sm-1 col-xs-12"></div>
         </div>
@@ -94,6 +94,7 @@ function isValidEmailAddress(emailAddress) {
         var lastName = $("#lastName").val()
         var email = $("#email").val()
         var sexe = $('input[name="sexe"]:checked').val();
+        var phonenumber = $("#phonenumber").val();
         console.log(firstName);
         console.log(lastName);
                 console.log(email);
@@ -102,6 +103,7 @@ function isValidEmailAddress(emailAddress) {
                 $("#firstName").css("border-top", "none")
                 $("#lastName").css("border-top", "none")
                   $("#email").css("border-top", "none")
+                  $("#phonenumber").css("border-top", "none");
                   var ok = true
          if (firstName == ""){
             $("#firstName").css("border-top", "2px solid #FF0080")
@@ -111,7 +113,10 @@ function isValidEmailAddress(emailAddress) {
              $("#lastName").css("border-top", "2px solid #FF0080")
              ok = false
          }
-
+         if (phonenumber == ""){
+           $("#phonenumber").css("border-top" , "2px solid #FF0080");
+           ok = false
+         }
          if (isValidEmailAddress(email) == false){
             $("#email").css("border-top", "2px solid #FF0080")
             ok = false
@@ -124,7 +129,8 @@ function isValidEmailAddress(emailAddress) {
             var data = {
                 email : email,
                 first_name : firstName,
-                last_name : lastName
+                last_name : lastName,
+                phonenumber : phonenumber
             }
             /*
             $.post( window.location.origin + "/event/killason", data, function(data){
