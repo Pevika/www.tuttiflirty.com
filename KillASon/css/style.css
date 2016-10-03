@@ -230,7 +230,16 @@ html {
   margin-top: 20px;
   margin-bottom: 50px;
   font-family: 'avenir-black';
-  font-size: 2em;
+  font-size: 25px;
+  color: #ff0080;
+}
+
+.infoKillASonShowased {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'avenir-black';
+  font-size: 25px;
   color: #ff0080;
 }
 .button-stop-spot a {
