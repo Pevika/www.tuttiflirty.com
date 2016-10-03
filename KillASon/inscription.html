@@ -69,7 +69,7 @@
         <div class="row buttonInscription" style="text-align:center" onclick="sendInfo()">
             <button>JE M'INSCRIS</button>
         </div>
-         <div class="row confirmationInscription" style="text-align:center; display:none" onclick="sendInfo()">
+         <div class="row confirmationInscription" style="text-align:center; display:none" >
            <div class="row infoKillASonShowased" style="margin-top:55px">
 
              <div  class="col-sm-2 col-xs-12"></div>
@@ -87,7 +87,7 @@ function isValidEmailAddress(emailAddress) {
     // alert( pattern.test(emailAddress) );
     return pattern.test(emailAddress);
 };
-
+var send = false
     function sendInfo(){
         console.log("LCICK");
         var firstName = $("#firstName").val()
@@ -145,6 +145,10 @@ ga('send', 'event', {
    eventLabel: firstName + " " + lastName+  " " + email
  });
             console.log("ON envoie");
+            if (send == true){
+              return
+            }
+            send = true
              $.ajax({
                     url: window.location.origin + "/event/killason",
                     type: "POST",
