@@ -67,6 +67,15 @@ The Family - 25 Rue du Petit Musc - 75004 Paris</div>
             <button>JE M'INSCRIS</button>
         </div>
          <div class="row confirmationInscription" style="text-align:center; display:none" onclick="sendInfo()">
+           <div class="row infoKillASonShowased" style="margin-top:55px">
+
+             <div  class="col-sm-2 col-xs-12"></div>
+             <div  class="col-sm-8 col-xs-12">Showcase ultra-privé de KillASon
+100 places
+Mardi 4 octobre - 21 heures
+The Family - 25 Rue du Petit Musc - 75004 Paris</div>
+             <div  class="col-sm-2 col-xs-12"></div>
+           </div>
             Merci <strong>;)</strong>
         </div>
     </body>
@@ -102,13 +111,12 @@ function isValidEmailAddress(emailAddress) {
              $("#lastName").css("border-top", "2px solid #FF0080")
              ok = false
          }
-           if (sexe == null || sexe == undefined){
-            ok = false
-         }
+
          if (isValidEmailAddress(email) == false){
             $("#email").css("border-top", "2px solid #FF0080")
             ok = false
         }
+        console.log("ok")
         if (ok == true) {
             $(".footerInscription").hide()
             $(".buttonInscription").hide()
@@ -124,7 +132,7 @@ function isValidEmailAddress(emailAddress) {
             })*/
 
 
-
+            console.log("ON envoie");
              $.ajax({
                     url: window.location.origin + "/event/killason",
                     type: "POST",
