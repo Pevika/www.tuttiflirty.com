@@ -42,27 +42,24 @@
             <img src="img/header_inscription.png" style="width : 100%">
          </div>
          <div class="row footerInscription">
+           <div class="row infoKillASonShowase">
+
+             <div  class="col-sm-2 col-xs-12"></div>
+             <div  class="col-sm-8 col-xs-12">Showase ultra-privé de KillASon
+100 places
+Mardi 4 octobre - 21 heures
+The Family - 25 Rue du Petit Musc - 75004 Paris</div>
+             <div  class="col-sm-2 col-xs-12"></div>
+           </div>
             <div  class="col-sm-2 col-xs-12"></div>
             <div  class="col-sm-2 col-xs-12 " ><input type="text" id="firstName" placeholder="Prénom"> </input></div>
             <div  class="col-sm-2 col-xs-12 nameInput"><input type="text" id="lastName" placeholder="Nom"> </input></div>
             <div  class="col-sm-3 col-xs-12"><input type="text" id="email" placeholder="E-mail"> </input></div>
             <div  class="col-sm-2 col-xs-12 selectSexe " style = "margin-top:-10px">
 
-                <label style="margin-right: 20px" for="female">
-
-                    <img style="height :20px" src="img/PICTOS-05.png">
-                    <input type="radio" id="female" name="sexe"  value="female" />
-                </label>
-                
+              
 
 
-                <label for="male">
-
-                    <img style="width :20px" src="img/PICTOS-06.png">
-                    <input type="radio" id="Male" name="sexe" value="male"  />
-                </label>
-
-                
             </div>
             <div  class="col-sm-1 col-xs-12"></div>
         </div>
@@ -100,14 +97,14 @@ function isValidEmailAddress(emailAddress) {
          if (firstName == ""){
             $("#firstName").css("border-top", "2px solid #FF0080")
             ok = false
-         } 
+         }
           if (lastName == ""){
              $("#lastName").css("border-top", "2px solid #FF0080")
              ok = false
          }
            if (sexe == null || sexe == undefined){
             ok = false
-         } 
+         }
          if (isValidEmailAddress(email) == false){
             $("#email").css("border-top", "2px solid #FF0080")
             ok = false
@@ -125,8 +122,8 @@ function isValidEmailAddress(emailAddress) {
             $.post( window.location.origin + "/event/killason", data, function(data){
                 console.log(data)
             })*/
-            
-   
+
+
 
              $.ajax({
                     url: window.location.origin + "/event/killason",
@@ -144,7 +141,7 @@ function isValidEmailAddress(emailAddress) {
 
 
             });
-   
+
 
         }
     }
@@ -165,7 +162,7 @@ function isValidEmailAddress(emailAddress) {
             console.log(l)
             //$(".footerInscription").height(l);
             var nbr = l - c - 5
-            $(".footerInscription").css("padding-top",nbr);
+            $(".footerInscription").css("padding-top",nbr / 2);
 
 
             var topButton = (nbr / 2) - ($(".buttonInscription").height() / 2)
@@ -174,12 +171,12 @@ function isValidEmailAddress(emailAddress) {
         }
         $( window ).resize(function() {
             reloadSize()
-          
+
         });
 
         $( document ).ready(function() {
             reloadSize()
-          
+
         });
     </script>
 </html>
