@@ -41,9 +41,6 @@
          <div class="row headerInscription">
             <img src="img/header_inscription.png" style="width : 100%">
          </div>
-         <div class="row infoKillASonShowase">
-             <div  class="col-sm-12 col-xs-12">&nbsp;</div>
-           </div>
          <div class="row footerInscription">
            <div class="row infoKillASonShowase">
 
@@ -61,27 +58,13 @@
            </div>
 
             <div  class="col-sm-2 col-xs-12"></div>
-
             <div  class="col-sm-2 col-xs-12 " ><input type="text" id="firstName" placeholder="Prénom"> </input></div>
             <div  class="col-sm-2 col-xs-12 nameInput"><input type="text" id="lastName" placeholder="Nom"> </input></div>
             <div  class="col-sm-3 col-xs-12"><input type="text" id="email" placeholder="E-mail"> </input></div>
-<<<<<<< HEAD
             <div  class="col-sm-2 col-xs-12  " style = "">
               <input type="text" id="phonenumber" placeholder="Phone"> </input>
-=======
-            
-            <div  class="col-sm-2 col-xs-12"><input type="text" id="phoneNumber" placeholder="Numéro de téléphone"> </input></div>
-            
-            <!--
-            <div  class="col-sm-2 col-xs-12 selectSexe " style = "margin-top:-10px">
-                -->
-
->>>>>>> 518f5c5bf1a9d4a5367b1e7d9ec7cadef87af483
             </div>
             <div  class="col-sm-1 col-xs-12"></div>
-        </div>
-         <div class="row buttonInscription" style="text-align:center">
-            &nbsp;
         </div>
         <div class="row buttonInscription" style="text-align:center" onclick="sendInfo()">
             <button>JE M'INSCRIS</button>
@@ -109,26 +92,18 @@ function isValidEmailAddress(emailAddress) {
         console.log("LCICK");
         var firstName = $("#firstName").val()
         var lastName = $("#lastName").val()
-        var phoneNumber = $("#phoneNumber").val()
-
         var email = $("#email").val()
         var sexe = $('input[name="sexe"]:checked').val();
         var phonenumber = $("#phonenumber").val();
         console.log(firstName);
         console.log(lastName);
-         console.log(phoneNumber);
                 console.log(email);
                 console.log(sexe);
 
                 $("#firstName").css("border-top", "none")
                 $("#lastName").css("border-top", "none")
-<<<<<<< HEAD
                   $("#email").css("border-top", "none")
                   $("#phonenumber").css("border-top", "none");
-=======
-                $("#email").css("border-top", "none")
-                $("#phoneNumber").css("border-top", "none")
->>>>>>> 518f5c5bf1a9d4a5367b1e7d9ec7cadef87af483
                   var ok = true
          if (firstName == ""){
             $("#firstName").css("border-top", "2px solid #FF0080")
@@ -138,20 +113,10 @@ function isValidEmailAddress(emailAddress) {
              $("#lastName").css("border-top", "2px solid #FF0080")
              ok = false
          }
-<<<<<<< HEAD
          if (phonenumber == ""){
            $("#phonenumber").css("border-top" , "2px solid #FF0080");
            ok = false
          }
-=======
-
-         if (phoneNumber == ""){
-             $("#phoneNumber").css("border-top", "2px solid #FF0080")
-             ok = false
-         }
-
-
->>>>>>> 518f5c5bf1a9d4a5367b1e7d9ec7cadef87af483
          if (isValidEmailAddress(email) == false){
             $("#email").css("border-top", "2px solid #FF0080")
             ok = false
@@ -164,13 +129,8 @@ function isValidEmailAddress(emailAddress) {
             var data = {
                 email : email,
                 first_name : firstName,
-<<<<<<< HEAD
                 last_name : lastName,
                 phonenumber : phonenumber
-=======
-                last_name : lastName
-                phone_number = phoneNumber
->>>>>>> 518f5c5bf1a9d4a5367b1e7d9ec7cadef87af483
             }
             /*
             $.post( window.location.origin + "/event/killason", data, function(data){
