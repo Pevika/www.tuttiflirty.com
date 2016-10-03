@@ -67,21 +67,21 @@ html {
 }
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    #000000;
-    font-family: "cabin-regular", Arial, Helvetica, sans-serif;  
+    font-family: "cabin-regular", Arial, Helvetica, sans-serif;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
    color:    #000000;
    opacity:  1;
-   font-family: "cabin-regular", Arial, Helvetica, sans-serif;  
+   font-family: "cabin-regular", Arial, Helvetica, sans-serif;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
    color:    #000000;
    opacity:  1;
-   font-family: "cabin-regular", Arial, Helvetica, sans-serif;  
+   font-family: "cabin-regular", Arial, Helvetica, sans-serif;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
    color:    #000000;
-   font-family: "cabin-regular", Arial, Helvetica, sans-serif;  
+   font-family: "cabin-regular", Arial, Helvetica, sans-serif;
 }
 
 
@@ -91,7 +91,7 @@ html {
 
 
 .topKillASon{
-    text-align : left; 
+    text-align : left;
     padding-left : 15%;
     margin-top: 20px;
     margin-bottom: 50px;
@@ -100,14 +100,14 @@ html {
 .sous-page {
     background:
     /* top, transparent, faked with gradient */
-    
+
     linear-gradient( rgba(104, 189, 230, 0.1), rgba(96, 62, 146, 0.1));
     padding: 20px 20px;
     margin: 20px;
 }
 .sous-page h1 {
     /*color: rgba(96, 62, 146, 0.75);*/
-    
+
     color: #ff0080;
 }
 .sous-page h1 small {
@@ -115,18 +115,18 @@ html {
 }
 .intro {
     /*display: table;*/
-    
+
     width: 100%;
     height: auto;
     min-height: 100%;
     /*padding: 100px 0;*/
-    
+
     text-align: left;
     color: white;
     background-color: none;
     background: #ff0080;
     /*url(../img/thumbs/bg1.jpg) no-repeat 82% center fixed;*/
-    
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -188,21 +188,21 @@ html {
 .navbar-default {
     background-color: white;
     /*background-color: rgba(96, 62, 146, 1);*/
-    
+
     border-color: transparent;
     /*color: white;*/
-    
+
     color: #ff0080;
 }
 .navbar-default .navbar-nav>li>a {
     /*color: white;*/
-    
+
     color: #ff0080;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
     /*color: white;*/
-    
+
     color: #ff0080;
     background-color: transparent;
 }
@@ -223,6 +223,15 @@ html {
     left: 0px;
     width: 76px;
     height: 76px;
+}
+
+.infoKillASonShowase {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-family: 'avenir-black';
+  font-size: 2em;
+  color: #ff0080;
 }
 .button-stop-spot a {
     width: 24px;
@@ -247,7 +256,7 @@ html {
     font-family: 'todayshop-lightregular', sans-serif;
     font-size: 3em;
     letter-spacing: 3px;
-    text-align:left; 
+    text-align:left;
     padding-left : 75px
 }
 .download {
@@ -288,7 +297,7 @@ html {
 }
 .form-group {
     /*color: rgba(96, 62, 146, 1)*/
-    
+
     color: #ff0080
 }
 #countbox1 {
