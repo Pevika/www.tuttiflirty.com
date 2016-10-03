@@ -234,6 +234,10 @@ html {
   color: #ff0080;
 }
 
+.littleem {
+  font-size: 25px;
+  font-style : none;
+}
 .infoKillASonShowased {
   text-align: center;
   margin-top: 50px;
