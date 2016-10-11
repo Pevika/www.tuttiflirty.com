@@ -34,9 +34,7 @@ html {
 }
 .sous-page {
     background:
-    /* top, transparent, faked with gradient */
-    
-    linear-gradient( rgba(104, 189, 230, 0.1), rgba(96, 62, 146, 0.1));
+    linear-gradient( rgba(0, 252, 168, 0.2), rgba(0, 252, 168, 0.2));
     padding: 20px 20px;
     margin: 20px;
 }
